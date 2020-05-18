@@ -12,29 +12,20 @@ var selectedMeme;
    });
 
 
-
-
-//........... chat API ............//
-
-// let client = require('./config.js');
-
-
 function sendMsg(client) {
 
   $.ajax({
     method: "POST",
     url: "http://localhost:5666/send-msg",
-    success: successMsg,
-    error: errorMsg,
-
     data: {
-      contact: contactInput.value,
-      msgText: msgTextInput.value,
-      selectedMeme
+    contact: contactInput.value,
+    msgText: msgTextInput.value,
+    selectedMeme
     },
+
+    success: successMsg,
+    error: errorMsg
   });
-
-
 
 }
 
@@ -45,15 +36,3 @@ function successMsg(result) {
 function errorMsg(error) {
   alert(error)
 }
-
-//........................................//
-//.............img search API..............//
-
-
-
-
-
-
-
-
-//.......................................//

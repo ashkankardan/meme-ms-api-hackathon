@@ -6,7 +6,7 @@ body {
 .container {
   display: grid;
   width: 90vw;
-  height: 95vh;
+  height: 105vh;
   background-color: rgb(187, 187, 187);
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ header {
 }
 
 section {
-  height: 75vh;
+  height: 800px;
   width: 85vw;
   display: grid;
   /* grid-template-columns: 2fr 1fr; */
@@ -30,7 +30,15 @@ section {
   box-shadow: darkgray 1px 1px;
 }
 
+main {
 
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
 
 .msgBox {
   margin-top: 2em;
@@ -83,13 +91,14 @@ section {
   margin: auto;
   margin-bottom: 2%;
   background-color: rgb(0, 67, 118);
-  border: 1px solid darkgray;
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 2px;
   padding: 5px 20px;
+  border-radius: 5px;
 
 
   margin: 4px, auto;
-  padding: 4px;
+  padding: 3px;
   width: 400px;
   height: 250px;
   overflow-x: hidden;
@@ -124,9 +133,12 @@ button {
 #sendBtn {
   align-items: center;
   margin: 0 auto;
-  width: 400px;
+  width: 412px;
   height: 1.8rem;
   background-color: darkgrey;
+  font-weight: bold;
+  font-size: 1.1rem;
+
 }
 
 #sendBtn:hover {
@@ -136,6 +148,7 @@ button {
 
 button p {
   text-align: center;
+
 
 }
 

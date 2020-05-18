@@ -2,16 +2,7 @@
 document.getElementById('searchBtn').addEventListener('click', searchImg);
 
 
-
-
-
-
-
-
-
-
 function searchImg() {
-
 
   $.ajax({
 
@@ -33,7 +24,6 @@ function searchImg() {
           "height": 437,
           "box_count": 2
         }
-        // probably a lot more memes here..
       ]
     },
 
@@ -41,20 +31,14 @@ function searchImg() {
     url: 'https://api.imgflip.com/get_memes',
     success: successMsg,
     error: errorMsg
-
-
-
   })
   console.log(data)
-
  };
 
 
 
  function successMsg(result){
-  // console.log('result: ', result);
-  // console.log(imgSearchTerm.value);
-
+   console.log(result)
 
   $('#resultImgs').html('')
 

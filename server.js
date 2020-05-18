@@ -8,8 +8,8 @@ const bodyParser = require('body-parser')
 
 var twilio = require('twilio');
 
-var accountSid = 'XXXXXXXXXX';
-var authToken = 'XXXXXXXXXXXX';
+var accountSid = 'ACd948d444d6d90ee7301ad1f4526f04db';
+var authToken = '7cd3104ab6b53713d90e66ae0015cce3';
 
 
 var client = new twilio(accountSid, authToken);
@@ -37,5 +37,4 @@ app.post('/send-msg', function (req, res){
 
 app.listen(port, function(){
   console.log('server running!')
-
 });
