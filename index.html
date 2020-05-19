@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>API Hackathon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
   <!-- <script src="./config.js"></script> -->
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -24,20 +26,20 @@
             </div>
             <div id="msgContent">
               <label for="msg">Message Content:</label>
-              <textarea name="msg" id="msg" placeholder="Message Content"  rows="10"></textarea>
+              <textarea name="msg" id="msg" placeholder="Your Message Content"  rows="10"></textarea>
             </div>
           </div>
 
           <div class="memeSearch">
             <div id="search">
-              <label for="search">Search for a keyword or click to get all items</label>
+              <label for="search">Search for a keyword or just click</label>
               <input id="imgSearchTerm" type="text" name="search" placeholder="Search">
               <button id="searchBtn" class="imgBtn">
                 <P>&#128269</P>
               </button>
             </div>
             <div id="result">
-              <p>Search Result</p>
+              <p id="searchResultTitle">Search Result</p>
               <div id="resultImgs"></div>
             </div>
 
