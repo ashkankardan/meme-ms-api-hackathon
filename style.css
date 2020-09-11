@@ -1,15 +1,13 @@
 body {
+  font-family: 'Permanent Marker', cursive;
   background-color: black;
 }
-
 
 .container {
   display: grid;
   width: 90vw;
-  height: 95vh;
-  background-color: rgb(187, 187, 187);
-  justify-content: center;
-  align-items: center;
+  height: 85vh;
+  background-color: rgb(0, 0, 0);
   margin: 0 auto;
 
 }
@@ -17,30 +15,40 @@ body {
 
 header {
   text-align: center;
+  color: whitesmoke
 }
 
 section {
-  height: 75vh;
-  width: 85vw;
   display: grid;
-  /* grid-template-columns: 2fr 1fr; */
-  grid-template-rows: auto auto;
-  border: 5px solid black;
-  border-radius: 2px;
-  box-shadow: darkgray 1px 1px;
+  height: 710px;
+  width: 100%;
+  margin: auto;
+  padding: 1.2rem 1rem;
+
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  border: 5px solid darkgray;
+  border-radius: 5px;
+  box-shadow: whitesmoke 0.6px 1.5px;
 }
 
-
+label {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+  padding-left: 10px;
+  color: whitesmoke;
+}
 
 .msgBox {
-  margin-top: 2em;
   margin-bottom: 2em;
   display: grid;
   row-gap: auto;
 }
 
 #contact {
-  margin:  auto;
+  margin: auto;
   margin-bottom: 2%;
 }
 
@@ -49,9 +57,10 @@ section {
   margin-top: 2%;
 }
 
-#msg, #contactInput {
+#msg,
+#contactInput {
   width: 400px;
-  border: 2px solid black;
+  border: 2px solid darkgray;
   border-radius: 5px;
   padding: 0.2rem;
 }
@@ -73,8 +82,8 @@ section {
 
 #imgSearchTerm {
   height: 2.3rem;
-  width: 370px;
-  border: 2px solid black;
+  width: 365px;
+  border: 2px solid darkgray;
   border-radius: 5px;
   padding: 0.2rem;
 }
@@ -82,14 +91,16 @@ section {
 #result {
   margin: auto;
   margin-bottom: 2%;
-  background-color: rgb(0, 67, 118);
-  border: 1px solid darkgray;
+  background-color: rgb(220, 220, 220);
+  border: 3px solid darkgray;
   border-radius: 2px;
   padding: 5px 20px;
+  border-radius: 5px;
+  position: relative;
 
 
   margin: 4px, auto;
-  padding: 4px;
+  padding: 3px;
   width: 400px;
   height: 250px;
   overflow-x: hidden;
@@ -97,56 +108,134 @@ section {
   text-align: center;
 }
 
-#result p {
-  color: white;
-  font-weight: bold;
-}
 
+#searchResultTitle {
+  color: rgb(0, 0, 0)0);
+  font-weight: bold;
+  display: inline;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
 
 img {
   width: 300px;
 }
 
-#overlay {
-  margin: auto;
-  margin-bottom: 2%;
+img:visited {
+  border: 5px solid black;
 
 }
 
 button {
   text-align: center;
   background-color: rgb(216, 216, 216);
-  border: 2px solid rgb(27, 59, 84);
+  border: 2px solid rgb(135, 135, 135);
   border-radius: 5px;
-  box-shadow: darkgray 1px 1px;
+  box-shadow: darkgray .5px 1px;
 }
 
 #sendBtn {
+  font-family: 'Permanent Marker', cursive;
   align-items: center;
   margin: 0 auto;
-  width: 400px;
+  width: 412px;
   height: 1.8rem;
-  background-color: darkgrey;
+  background-color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 #sendBtn:hover {
   background-color: black;
-  color: white;
+  color: whitesmoke;
 }
 
 button p {
   text-align: center;
-
 }
 
-/* #overlayBtn {
-  background-image: url("./assets/img/overlayText.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-} */
-
-
 footer {
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+#overlayInput {
+  height: 2.3rem;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+
+
+#previewMessage {
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  background-color: rgb(220, 220, 220);
+  border: 3px solid darkgray;
+  border-radius: 2px;
+  padding: 5px 2px;
+  border-radius: 5px;
+  display: inline-block;
+  row-gap: auto;
+
+
+  margin: 4px, auto;
+  padding: 3px;
+  width: 400px;
+  height: 250px;
+  overflow-x: hidden;
+  overflow-x: auto;
+  text-align: center;
+}
+
+#overlayText {
+  display: grid;
+  row-gap: auto;
+  margin-bottom: 2%;
+}
+
+#addText {
+  font-family: 'Permanent Marker', cursive;
+  align-items: center;
+  margin: 0 auto;
+  width: 410px;
+  height: 1.8rem;
+  background-color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#addText:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+
+#status {
+  margin: 0 auto;
+  margin-bottom: 2%;
+  background-color: rgb(220, 220, 220);
+  border: 3px solid darkgray;
+  border-radius: 2px;
+  padding: 5px 2px;
+  border-radius: 5px;
+  display: inline-block;
+
+
+
+  margin: 5% auto;
+  padding: 3px;
+  width: 400px;
+  height: 150px;
+  overflow-x: hidden;
+  overflow-x: auto;
   text-align: center;
 }
