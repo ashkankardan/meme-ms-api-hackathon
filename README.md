@@ -1,5 +1,5 @@
 ![Final version](./assets/img/meme-ms.png)
-# MIME,MS / api-hackathon
+# MEME,MS / API-Hackathon
 A hackathon project utlizing the data from two public APIs to create
 
 API-1: ImgFlip (To search for Memes)
