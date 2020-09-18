@@ -1,4 +1,4 @@
-[Final version] (./assets/img/mime-ms.png)
+![Final version] (./assets/img/mime-ms.png)
 # MIME,MS / api-hackathon
 A hackathon project utlizing the data from two public APIs to create
 
